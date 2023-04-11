@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Murilo Oliveira</title>
+
+    <!--swiper css-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <!--box icons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--font-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!--css-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo" href="#">Murilo<span>Oliveira</span>.</a>
+
+      <nav class="navbar">
+        <a href="#inicio" class="active">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="bx bx bx-moon" id="darkMode-icon"></div>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+
+    </header>
+
+    <!------------inicio------------>
+
+    <section class="inicio" id="inicio">
+      <div class="inicio-content">
+        <h3>Olá, Eu sou</h3>
+        <h1>Murilo Oliveira</h1>
+        <p>
+          Meu nome é Murilo Leite de Oliveira e eu sou um apaixonado por
+          tecnologia e decidi trilhar o caminho da programação.
+        </p>
+
+        <div class="social-media">
+          <a href="https://www.instagram.com/murilo__15/" target="_blank"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/murilo-oliveira-28ab52248/" target="_blank"><i class="bx bxl-linkedin" ></i></a>
+          <a href="https://github.com/devMuriloOliveira" target="_blank"><i class="bx bxl-github"></i></a>
+        </div>
+
+        <a href="#contato" class="btn">Entrar em contato</a>
+      </div>
+
+      <div class="profession-container">
+        <div class="profession-box">
+          <div class="profession" style="--i: 0">
+            <i class="bx bx-code-alt"></i>
+            <h3>desenvolvedor</h3>
+          </div>
+          <div class="profession" style="--i: 1">
+            <i class="bx bx-code-alt"></i>
+            <h3>---Front-end---</h3>
+          </div>
+          <div class="profession" style="--i: 2">
+            <i class="bx bx-code-alt"></i>
+            <h3>desenvolvedor</h3>
+          </div>
+          <div class="profession" style="--i: 3">
+            <i class="bx bx-code-alt"></i>
+            <h3>---Front-end---</h3>
+          </div>
+          <div class="circle"></div>
+        </div>
+
+        <div class="overlay"></div>
+      </div>
+
+      <div class="inicio-img">
+        <img src="assets/homem_sorrindo-removebg-preview.png" alt="" />
+      </div>
+    </section>
+
+    <!------------sobre------------>
+    <div class="divider-1"></div>
+
+    <section class="sobre" id="sobre">
+      <div class="sobre-img">
+        <img src="/assets/profile-pic (4).png" alt="" />
+      </div>
+
+      <div class="sobre-content">
+        <h2 class="heading">Sobre <span>Mim</span></h2>
+
+        <p>
+          Meu nome é Murilo Leite de Oliveira e eu sou um apaixonado por
+          tecnologia e decidi trilhar o caminho da programação. Atualmente estou
+          focando nas tecnologias voltadas ao FrontEnd.
+        </p>
+        <br />
+        <p>Hoje já entendo HTML / CSS / javascript.</p>
+        <br />
+        <p>
+          Continuo meus estudos constante de javascript. E começando os estudos
+          de ReactJS
+        </p>
+        <br />
+        <p>
+          Meu objetivo é um dia trabalhar na área me tornando um programador e ser
+          reconhecido na área.
+        </p>
+        <br />
+
+        <a href="#" class="btn">Currículo</a>
+      </div>
+    </section>
+
+    <!------------projetos------------>
+    <div class="divider-2"></div>
+
+
+    <section class="projetos" id="projetos">
+      <h2 class="heading">Meus <span>Projetos</span></h2>
+
+      <div class="projetos-wrapper">
+        <div class="projetos-box mySwiper">
+          <div class="projetos-content swiper-wrapper">
+            <div class="projetos-slide swiper-slide">
+              <img src="/assets/fotos-projetos/salon.jpg" alt="" />
+              <h3>BeautySalon</h3>
+              <p>
+                Focado no front end, beautysalon é um site modelo flexível para
+                ser usado para qualquer tipo de negócio, vai da necessidade do
+                que você precisa vender.
+              </p>
+              <a
+                class="btn"
+                target="_blank"
+                href="projetos/projeto-1.html"
+                >Visualizar</a
+              >
+            </div>
+
+            <div class="projetos-slide swiper-slide">
+              <img src="/assets/fotos-projetos/doctor-care.jpg" alt="" />
+              <h3>DoctorCare</h3>
+              <p>
+                Focado no front end, DoctorCare é um site modelo flexível para
+                ser usado para qualquer tipo de negócio, vai da necessidade do
+                que você precisa vender.
+              </p>
+              <a
+                class="btn"
+                target="_blank"
+                href="https://devmurilooliveira.github.io/doctor-car/"
+                >Visualizar</a
+              >
+            </div>
+
+            <div class="projetos-slide swiper-slide">
+              <img src="/assets/fotos-projetos/alura-plus.jpg" alt="" />
+              <h3>Alura Plus</h3>
+              <p>
+                Focado nas práticas do HTML e CSS a Alura Plus é uma tela
+                inicial de um serviço de cursos, pode ser usado como para
+                qualquer tipo de site que seguem esse estilo.
+              </p>
+              <a
+                class="btn"
+                target="_blank"
+                href="https://devmurilooliveira.github.io/Alura-Plus/"
+                >Visualizar</a
+              >
+            </div>
+
+            <div class="projetos-slide swiper-slide">
+              <img src="/assets/fotos-projetos/alura-books.jpg" alt="" />
+              <h3>Alura Books</h3>
+              <p>
+                Focado nas práticas do HTML e CSS a Alura Books é um site modelo
+                que pode ser usado para vendas de livros, totalmente responsivos
+                para qualquer tipo de tela.
+              </p>
+              <a
+                class="btn"
+                target="_blank"
+                href="https://devmurilooliveira.github.io/Alura-Books/"
+                >Visualizar</a
+              >
+            </div>
+
+            <div class="projetos-slide swiper-slide">
+              <img src="/assets/fotos-projetos/hzc.jpg" alt="" />
+              <h3>HZC</h3>
+              <p>
+                Focado nas práticas do HTML e CSS o HZC é uma tela inicial de um
+                site de skatistas que pode ser usado como base para qualquer
+                tipo de site, responsivo para mobile e desktop.
+              </p>
+              <a
+                class="btn"
+                target="_blank"
+                href="https://devmurilooliveira.github.io/HZC/"
+                >Visualizar</a
+              >
+            </div>
+
+            <div class="projetos-slide swiper-slide">
+              <img src="/assets/fotos-projetos/alura-mid.jpg" alt="" />
+              <h3>Alura Mid</h3>
+              <p>
+                Focado nas práticas do javascript O Alura Midi é um instrumento
+                musical de interface digital, onde a cada botão vamos reproduzir
+                o som de um instrumento.
+              </p>
+              <a
+                class="btn"
+                target="_blank"
+                href="https://alura-mid-eta.vercel.app/"
+                >Visualizar</a
+              >
+            </div>
+
+            <div class="projetos-slide swiper-slide">
+              <img src="/assets/fotos-projetos/mochila-de-viagem.jpg" alt="" />
+              <h3>Mochila de Viagem</h3>
+              <p>
+                Focado nas práticas do javascript o Mochila de Viagem é uma
+                lista de itens, onde eu vou registrando tudo que eu não posso
+                esquecer e na hora de montar a minha mochila estar tudo ali
+                salvo.
+              </p>
+              <a
+                class="btn"
+                target="_blank"
+                href="https://devmurilooliveira.github.io/Mochila-de-viagem/"
+                >Visualizar</a
+              >
+            </div>
+
+            <div class="projetos-slide swiper-slide">
+              <img src="/assets/fotos-projetos/numero-secreto.jpg" alt="" />
+              <h3>Numero Secreto</h3>
+              <p>
+                Focado nas práticas do javascript o Numero Secreto é um jogo
+                onde você tem que adivinhar um numero aleatório entre 0 e 1000.
+              </p>
+              <a
+                class="btn"
+                target="_blank"
+                href="https://jogo-numero-secreto-beige-rho.vercel.app/"
+                >Visualizar</a
+              >
+            </div>
+
+            <div class="projetos-slide swiper-slide">
+              <img src="/assets/fotos-projetos/Organo.jpg" alt="" />
+              <h3>Organo</h3>
+              <p>
+                Focado nas práticas do javascript o Mochila de Viagem é uma
+                lista de itens, onde eu vou registrando tudo que eu não posso
+                esquecer e na hora de montar a minha mochila estar tudo ali
+                salvo.
+              </p>
+              <a
+                class="btn"
+                target="_blank"
+                href="https://devmurilooliveira.github.io/Mochila-de-viagem/"
+                >Visualizar</a
+              >
+            </div>
+
+            <div class="projetos-slide swiper-slide">
+              <img src="/assets/fotos-projetos/Organo-2.jpg" alt="" />
+              <h3>Mochila de Viagem</h3>
+              <p>
+                Focado nas práticas do javascript o Mochila de Viagem é uma
+                lista de itens, onde eu vou registrando tudo que eu não posso
+                esquecer e na hora de montar a minha mochila estar tudo ali
+                salvo.
+              </p>
+              <a
+                class="btn"
+                target="_blank"
+                href="https://devmurilooliveira.github.io/Mochila-de-viagem/"
+                >Visualizar</a
+              >
+            </div>
+
+            <div class="projetos-slide swiper-slide">
+              <img src="/assets/fotos-projetos/mochila-de-viagem.jpg" alt="" />
+              <h3>Mochila de Viagem</h3>
+              <p>
+                Focado nas práticas do javascript o Mochila de Viagem é uma
+                lista de itens, onde eu vou registrando tudo que eu não posso
+                esquecer e na hora de montar a minha mochila estar tudo ali
+                salvo.
+              </p>
+              <a
+                class="btn"
+                target="_blank"
+                href="https://devmurilooliveira.github.io/Mochila-de-viagem/"
+                >Visualizar</a
+              >
+            </div>
+
+            <div class="projetos-slide swiper-slide">
+              <img src="/assets/fotos-projetos/mochila-de-viagem.jpg" alt="" />
+              <h3>Mochila de Viagem</h3>
+              <p>
+                Focado nas práticas do javascript o Mochila de Viagem é uma
+                lista de itens, onde eu vou registrando tudo que eu não posso
+                esquecer e na hora de montar a minha mochila estar tudo ali
+                salvo.
+              </p>
+              <a
+                class="btn"
+                target="_blank"
+                href="https://devmurilooliveira.github.io/Mochila-de-viagem/"
+                >Visualizar</a
+              >
+            </div>
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------contato---------------------------------->
+    <div class="divider-1"></div>
+
+
+    <section class="contato" id="contato">
+      <h2 class="heading">Entre em  <span>contato</span></h2>
+      <div class="contato-container">
+        <div class="text">
+          <p>PRECISA DE UM SITE?</p>
+          <h2 class="title">Vamos trabalhar juntos</h2>
+          <a
+            href="https://api.whatsapp.com/send?phone=+5519971549006&text=Oi"
+            class="btn"
+            target="_blank"
+            ><i class='bx bxl-whatsapp' ></i></i> Entrar em contato</a
+          >
+        </div>
+  
+        <div class="links">
+          <ul class="grid">
+            <li><i class='bx bx-phone'></i></i> (19) 97154-9006</li>
+            <li><i class='bx bx-envelope' ></i></i> muriloleiteoliveira1@gmail.com</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!--------------------------------footer----------------------------------->
+
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2023 Murilo Oliveira. | Todos os direitos reservados.</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+      </div>
+    </footer>
+
+    <!--scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--swiper js-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!--main js-->
+    <script src="/main.js"></script>
+  </body>
+</html>

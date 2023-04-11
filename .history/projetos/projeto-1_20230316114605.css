@@ -1,0 +1,160 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root{
+  --bg-color: #fdfdfd;
+  --bg-color-second: #fafafa;
+  --text-color: #333;
+  --main-color: #754ef9;
+  --white-color: #fdfdfd;
+  --shadow-color: rgba(0, 0, 0, .2); 
+}
+
+.dark-mode{
+  --bg-color: #0b061f;
+  --text-color: #fdfdfd;
+  --shadow-color: rgba(0, 0, 0, .7); 
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body{
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 7%;
+  background: var(--main-color);
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  transition: .5s;
+  box-shadow: 0 .1rem 1rem var(--shadow-color);
+
+}
+
+.sticky{
+  background: var(--bg-color);
+  box-shadow: 0 .1rem 1rem var(--shadow-color);
+}
+
+.logo{
+  font-size: 2.5rem;
+  color: var(--white-color);
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.navbar a{
+  position: relative;
+  font-size: 1.7rem;
+  color: var(--white-color);
+  font-weight: 500;
+  margin-right: 3.5rem;
+}
+
+ .sticky .navbar a{
+  color: var(--text-color);
+}
+
+ .sticky .navbar a.active{
+  color: var(--main-color);
+}
+
+
+.navbar a.active::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: .2rem;
+  background: var(--white-color);
+}
+
+  .sticky .navbar a::before{
+  background: var(--main-color);
+  opacity: .7;
+}
+
+
+#darkMode-icon{
+  font-size: 2.4rem;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+.sticky #darkMode-icon{
+  color: var(--text-color);
+  opacity: .9;
+}
+
+#menu-icon{
+  font-size: 3.6rem;
+  color: var(--text-color);
+  display: none;
+}
+
+section{
+  min-height: 100vh;
+  padding: 10rem 7% 2rem;
+}
+
+.video{
+  text-align: center;
+  margin-top: 20rem;
+  
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 7%;
+  background: var(--main-color);
+}
+
+.footer-text{
+  font-size: 1.6rem;
+  color: var(--white-color);
+}
+
+.footer-iconTop a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: .8rem;
+  background: var(--white-color);
+  border-radius: .8rem;
+  border: .2rem solid var(--main-color);
+  outline: .2rem solid transparent;
+  transition: .5s ease;
+}
+
+.footer-iconTop a:hover{
+  outline-color: var(--white-color);
+}
+
+.footer-iconTop a i{
+  font-size: 2.4rem;
+  color: #333;
+}
